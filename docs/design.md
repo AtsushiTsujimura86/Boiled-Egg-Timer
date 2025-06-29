@@ -23,6 +23,7 @@
 ---
 
 ## 4. 画面設計（UI概要）
+- https://www.figma.com/design/DQuRsn8xo7VJ7d2g0oBjXd/%E7%84%A1%E9%A1%8C?node-id=0-1&p=f&t=zkHgeasNeaNXNw1F-0
 - トップ画面：アプリタイトル＋ゆで加減ボタン
 - タイマー画面：タイマー残り時間表示、アニメーション表示
 - 完了画面：アラーム音＋完了メッセージ

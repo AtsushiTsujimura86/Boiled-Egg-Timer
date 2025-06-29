@@ -1,9 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
-import Egg from './Egg';
+import { useState } from 'react';
+import EggSelector from './components/EggSelector';
+import Egg from './components/Egg';
 
 
 function App() {
+    const [selectedMode, setSelectedMode] = useState(null); //選択されたモードのフック
+    const handleSelect = (mode) => {
+        setSelectedMode(mode);
+    }
+
+
   return (
     <div className="App">
       <header>
@@ -12,12 +20,9 @@ function App() {
       
       <div>
         <h1>Select Mode</h1>
-        <button>温泉卵</button>
-        <button>半生</button>
-        <button>半熟</button>
-        <button>完熟</button>
-      </div>
-      <Egg/>
+        <EggSelector onSelect={handleSelect}/>
+        </div>
+      <Egg  mode={selectedMode}/>
     </div>
   );
 }
