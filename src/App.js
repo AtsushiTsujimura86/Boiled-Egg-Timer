@@ -1,8 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import { useState } from 'react';
-import EggSelector from './components/EggSelector';
+import Header from './components/Header';
+import EggSelector from './components/EggSelector'; 
 import Egg from './components/Egg';
+import Timer from './components/Timer';
+import Timer2 from './components/Timer2';
 
 
 function App() {
@@ -14,15 +17,18 @@ function App() {
 
   return (
     <div className="App">
-      <header>
-        <h1>Boiled Egg Timer 🥚</h1>
-      </header>
+      <Header />``
       
-      <div>
-        <h1>Select Mode</h1>
-        <EggSelector onSelect={handleSelect}/>
+    <div className='row'>         
+        <div className='col-8'>
+            <EggSelector onSelect={handleSelect} />
+            {/* <Timer /> */}
+            <Timer2 />
         </div>
-      <Egg  mode={selectedMode}/>
+        <div className="col-4">
+            <Egg  mode={selectedMode}/>
+        </div>
+    </div>
     </div>
   );
 }

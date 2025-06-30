@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from "react";
 
-function EggSelector({onSelect}) {
+function EggSelector({onSelect} ) {
   return (
-    <div>
+    <div className="eggSelector">
+        <h1>Select Mode</h1>
         <button className="btn btn-warning">温泉卵</button>
         <button onClick={() => onSelect("slof")}>半生</button>
         <button onClick={() => onSelect("medium")}>半熟</button>
