@@ -1,5 +1,5 @@
 
-.egg {
+.egg-white {
 width: 120px;
 height: 180px;
 background-color: white;
@@ -9,7 +9,7 @@ position: relative;
 box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-.yolk {
+.egg-yolk {
 width: 75px;
 height: 110px;
 background-color: #ffd966;

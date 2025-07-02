@@ -1,4 +1,5 @@
 import React from "react";
+import './layout.css'
 import './egg_style.css';
 
 function Egg({ mode }){
@@ -13,9 +14,9 @@ function Egg({ mode }){
     }
 
     return(
-        <div>
-            <div className="egg">
-                <div className="yolk" style={yolkStyle}></div>
+        <div className="egg">
+            <div className="egg-white">
+                <div className="egg-yolk" style={yolkStyle}></div>
             </div>
         </div>
     )    

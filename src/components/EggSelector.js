@@ -2,12 +2,16 @@ import React, { useState, useEffect } from "react";
 
 function EggSelector({onSelect} ) {
   return (
-    <div className="eggSelector">
+    <div className="eggSelector" >
         <h1>Select Mode</h1>
-        <button className="btn btn-warning">温泉卵</button>
-        <button onClick={() => onSelect("slof")}>半生</button>
-        <button onClick={() => onSelect("medium")}>半熟</button>
-        <button onClick={() => onSelect("hard")}>完熟</button>
+        <div className="row">
+          <button className="btn btn-warning col-6">温泉卵</button>
+          <button className="btn btn-warning col-6" onClick={() => onSelect("soft")}>半生</button>
+        </div>
+        <div className="row">
+          <button className="btn btn-warning col-6" onClick={() => onSelect("medium")}>半熟</button>
+          <button className="btn btn-warning col-6" onClick={() => onSelect("hard")}>完熟</button>
+        </div>
     </div>
   );
 }
